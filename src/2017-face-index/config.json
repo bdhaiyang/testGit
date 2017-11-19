@@ -1,0 +1,10 @@
+{
+  "px2rem": {
+    "remUnit": 75,
+    "remPrecision": 8
+  },
+  "html": {
+    "title": "人脸采集",
+    "track": "SAMPLE_TRACK"
+  }
+}

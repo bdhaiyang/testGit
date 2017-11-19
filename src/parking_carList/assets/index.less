@@ -1,0 +1,110 @@
+@import "../../../node_modules/normalize.css/normalize.css";
+@import "../../_commons/css/base.less";
+@import "../../_commons/css/parking_base.less";
+
+// Sample
+#root {
+  //color : #00aeff;
+}
+body{
+    background:#fff;
+}
+/*车牌号管理*/
+.plateNumberList {
+    text-align: center;
+}
+
+.plateNumberList li {
+    padding: 60px 34px 0 34px;
+    box-shadow: 0px -8px 8px #cecece inset;
+    color: #fff;
+
+}
+
+.plateNumberList li p {
+    height: 135px;
+    line-height: 135px;
+    border-radius: 12px 12px 0 0;
+    background: #29b6f6;
+    background: -webkit-gradient(linear, 0 90%, 0 bottom, from(#37c2f2), to(rgba(43, 169, 214, 1)));
+    position: relative;
+    font-size: 46px;
+    box-shadow:0 -2px 20px rgba(0,0,0,0.2);
+}
+
+.plateNumberList .tip {
+    color: #adadad;
+    font-size: 28px;
+}
+.plateNumberList .tip b {
+    color: #40ccfd;
+    font-size: 36px;;
+    font-weight:normal;
+}
+.rPos {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    margin-top: -30px;
+    padding:0 10px;
+}
+.del{
+
+}
+.goPayPageBtn{
+    position: absolute;
+    right: 10px;
+    padding: 0 10px;
+    margin-top: 25px;
+    margin-right:10px;
+    border: 0 solid #ccc;
+    color: #40ccfd;
+    font-size: 30px;
+}
+.delCarLicenseBtn{
+    position: absolute;
+    right: 6px;
+    top: 6px;
+    padding: 10px;
+    line-height: 60px;
+    color:#fff;
+
+}
+.delCarLicenseBtn .iconfont{
+    font-size:50px;
+}
+
+.plateNumberList input:disabled{
+    border: 0 solid #aaa;
+    background-color: rgba(0,0,0,0);
+    color: #cfe5fe;
+    font-size:30px;
+}
+.leftCount{
+	color:#48caf0;
+	font-size:36px;
+}
+
+.btnBorder{
+    display:block;
+    line-height:70px;
+    text-align:center;
+    font-size:36px;
+    color:#40ccfd;
+}
+.btnBorder .iconfont{
+    margin-right:16px;
+    font-size:42px;
+    //vertical-align:middle;
+}
+.operation {
+    padding-bottom:16px;
+    margin-top: 44px;
+}
+.btnBorder[disabled]{
+    border-color:#adadad;
+    color:#adadad;
+}
+a.btnBorder:visited{
+    color:#40ccfd;
+}

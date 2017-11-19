@@ -1,0 +1,41 @@
+<div class="loginContainer">
+	<div class="logo"><img src="./images/icon_ffan.png" /></div>
+	<p class="title">使用蓝海账号登录<span></span></p>
+	<form class="formList">
+		<div class="textInput">
+			<i class="iconfont icon-phone"></i>
+			<input type="tel" class="required" id="phone" maxlength="11" placeholder="请输入手机号" />
+			<span class="clearTxt hide">x</span>
+		</div>
+		<div class="textInput">
+			<i class="iconfont icon-password"></i>
+			<input type="text" class="required" id="codeNum" maxlength="6" placeholder="请输入验证码" />
+			<input class="btnSendCode" type="button" value="获取短信验证码" />
+			<span class="codeClearTxt hide">x</span>
+		</div>
+		<!--<div class="validate hide">
+			<div class="textInput">
+				<i class="iconfont icon-sefety"></i>
+				<input type="text" class="codeInput required" id="codeNum" placeholder="请输入右侧图形码" />
+				<div class="codeInfo">
+					<img class="codeImg" src="http://i1.piimg.com/1949/dda1b1b76692f59b.png" alt="1234" />
+					<a class="createCode" href="#">换一张</a>
+				</div>
+			</div>
+		</div>-->
+		<div class="validate"></div>
+		<p class="reminder"><i class="iconfont icon-circle"></i>登录后，蓝海将与该网站共享您的昵称、头像</p>
+		<a href="javascript:void(0);" class="submitBtn">登录</a>
+	</form>
+	<a class="registerBtn" href="#">注册账号</a>
+</div>
+<div class="popUpShow">
+	<div class="bg"></div>
+	<div class="popUp">
+		<p class="message">该手机号还未注册为蓝海会员您可以马上注册</p>
+		<div class="messageBtn">
+			<a class="delBtn" href="javascript:void(0);">取消</a>
+			<a class="affirmBtn" href="">立即注册</a>
+		</div>
+	</div>
+</div>

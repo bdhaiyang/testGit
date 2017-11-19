@@ -1,0 +1,118 @@
+@import "../../../node_modules/normalize.css/normalize.css";
+@import "../../_commons/css/base.less";
+@import "../../_commons/css/parking_base.less";
+
+#root {
+  color : #333;
+}
+body{
+  background:#fff;
+}
+
+/*绑定车牌*/
+.cardNumber{
+	overflow: hidden;
+  padding:26px 34px 60px 34px;
+}
+
+input[type='text'].province, input[type='text']#cardNumber{
+    width: 100%;
+    font-size:30px;
+}
+
+
+
+
+
+	.selectIpt {
+      border-bottom: 2px solid #333;
+    }
+
+    .numBox .col10, .provinceBox .col10 {
+      display: inline-block;
+      width: 10%;
+      //height: 50px;
+      font-size: 30px;
+      vertical-align: top;
+      color: #666;
+    }
+
+    .numBox p, .provinceBox p {
+      height: 88px;
+      line-height: 88px;
+      margin:10px 8px;
+      border-radius: 6px;
+      background: #fff;
+    }
+
+    .cardNumber ul {
+      font-size: 0;
+      text-align: center;
+    }
+
+    .cardNumber ul li {
+      display: inline-block;
+      width: 10%;
+      margin:0 1% 0 2%;
+      height: 88px;
+      font-size: 36px;
+      vertical-align: top;
+      border: 2px solid #ccc;
+      border-radius:6px;
+      color: #333;
+    }
+
+    .cardNumber ul li:first-child {
+      width:19%;
+      margin-right:3%;
+      margin-left:0;
+    }
+    .cardNumber ul li:last-child {
+      margin-right:0;
+    }
+
+    .cardNumber ul li > p {
+      height: 86px;
+      line-height: 86px;
+    }
+
+    .cardNumber ul li:first-child i.iconfont{
+      margin-left:10px;
+      font-size:24px;
+    }
+
+
+    .numBox .row, .provinceBox .row {
+      padding: 0;
+      font-size: 0;
+      text-align: center;
+    }
+    .numBox,.provinceBox{
+      padding:5px 0 10px;
+      background: #d1d5da;
+      position: fixed;
+      z-index:7;
+      bottom: 110px;
+      width: 100%;
+    }
+
+    .tip{
+      padding-top:80px;
+      padding-left:34px;
+      font-size:28px;
+      color:#48caf0;
+    }
+
+    .numBox p.del{
+      position: absolute;
+      bottom: 0.13333333rem;
+      right: 0;
+      padding: 0 16px;
+      display:inline-block;
+      background:#acb4bf;
+      color:#fff;   
+
+    }
+    .numBox p.del i{
+      font-size:50px;
+    }

@@ -1,0 +1,113 @@
+@import "../../../node_modules/normalize.css/normalize.css";
+@import "../../_commons/css/base.less";
+@import "../../_commons/css/parking_base.less";
+
+// Sample
+#root {
+  color : #333;
+}
+body {
+    background: #fff;
+    font-size:0.8rem;
+}
+
+
+#tipInfo{
+  display:none;
+    font-size:inherit;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right:0;
+    top:inherit;
+    line-height:2;
+    padding:0.3rem 1.6rem 0.98rem 1.6rem;
+    color: #333;
+    border:0;
+    background:#fff;
+
+}
+#tipInfo h5{
+    font-size:1.2rem;
+    border-bottom:0.07rem solid #dcdcdc;
+    color:#000;
+    font-weight:normal;
+    padding-top:0.1rem;
+}
+#tipInfo h5 span{
+  font-size:0.88rem;
+  color:#2abfff;
+  
+}
+#tipInfo i.icon-dingwei{
+    margin-left:60px;
+    margin-right:20px;
+}
+#tipInfo a.toThere{
+    border-radius: 0.26666667rem;
+    padding: 0.2rem 0.4rem;
+    font-size: 1rem;
+    background: #48caf0;
+    color: #fff;
+    display: block;
+    text-align: center;
+}
+#tipInfo a.toThere i.icon-daohang{
+    vertical-align: middle;
+    margin-right:0.4rem;
+}
+
+.amap-info-sharp,.amap-logo,.amap-copyright{
+    display:none;
+    display:none!important;
+}
+.parkingPlace{
+    overflow:hidden;
+    font-size:0.75rem;
+    margin-bottom:0.25rem;
+    margin-top:0.1rem;
+    color:#666;
+}
+.parkingPlace p{
+    float:left;
+}
+.parkingPlace span{
+  margin-left:0.2rem;
+  color:#2abfff;
+}
+.parkingPlace i{
+  font-weight:bold;
+  font-size:0.8rem;
+  vertical-align: middle;
+  padding:0.2rem;
+  color:#c2c2c2;
+}
+
+.notWork{
+  display:none;
+  padding-top:280px;
+  z-index:8;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
+.notWork p{
+  text-align:center;
+  font-size:60px;
+  color:#adadad;
+}
+.notWork i.iconfont{
+  font-size:500px;
+}
+.notWork .operation{
+  padding-top:180px;
+}
+.notWork .btn{
+    font-size:0.96rem;
+    height:2.36rem;
+}
+

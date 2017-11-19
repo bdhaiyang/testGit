@@ -1,0 +1,49 @@
+@import "../../../node_modules/normalize.css/normalize.css";
+@import "../../_commons/css/base.less";
+
+// Sample
+#root {
+  color : #00aeff;
+}
+.userNotice{
+	padding:7px 25px;
+	.banner{
+		img{
+			width:100%;
+		}
+	}
+	.notice{
+		position: relative;
+		top: -23px;
+		padding:0 35px;
+		.noticeInfo{
+			box-shadow: 0 -4px 7px #d1d1d1;
+			background:#fff;
+			.shadow{
+				background: url(images/bg_border.png)repeat-x bottom center;
+				background-size: 100% 12px;
+				.userNoticeInfo{
+					padding:50px 45px;
+					font-size:28px;
+					color:#999;
+					line-height:1.8;
+					word-wrap:break-word;
+				}
+			}
+		}
+	}
+}
+.noInfo{
+	display:none;
+	img{
+		display:block;
+		width:328px;
+		height:307px;
+		margin:140px auto 60px;
+	}
+	p{
+		font-size:32px;
+		color:#666;
+		text-align:center;
+	}
+}

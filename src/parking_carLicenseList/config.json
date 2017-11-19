@@ -1,0 +1,11 @@
+{
+  "framework": "jquery",
+  "px2rem": {
+    "remUnit": 75,
+    "remPrecision": 8
+  },
+  "html": {
+    "title": "停车缴费",
+    "track": "SAMPLE_TRACK"
+  }
+}

@@ -1,0 +1,163 @@
+@import "../../../node_modules/normalize.css/normalize.css";
+@import "../../_commons/css/base.less";
+
+// Sample
+#root {
+  text-align: center;
+}
+.form-container {
+  margin: 100px 0;
+  padding:1px 40px 5px 36px;
+  background:transparent url("imgs/form.png") no-repeat center;
+  background-size: cover;
+  .upload-photo {
+    vertical-align: top;
+    display: inline-block;
+    width: 173px;
+    height: 220px;
+    background:transparent url("imgs/photo.png") no-repeat center 58px;
+    background-size: 61px 61px;
+    border: none;
+    border-radius: 4px;
+    position: relative;
+    left: -10px;
+    top: 3px;
+    span {
+      position: relative;
+      top: 149px;
+      font-size: 30px;
+      color: #c3c3c3;
+    }
+  }
+  .input-wrapper {
+    display: inline-block;
+    width: 490px;
+    .phoneNumberInput {
+      border: none;
+      border-radius: 4px;
+      width: 480px;
+      height: 88px;
+      background: transparent;
+      &::-webkit-input-placeholder { color:#c3c3c3; font-size: 30px; opacity: 1}
+      &::-moz-placeholder { color:#c3c3c3; font-size: 30px; opacity: 1} /* firefox 19+ */
+      &:-ms-input-placeholder { color:#c3c3c3; font-size: 30px; opacity: 1} /* ie */
+      &input:-moz-placeholder { color:#c3c3c3; font-size: 30px; opacity: 1}
+    }
+    .code-wrapper {
+      background: transparent;
+
+      position: relative;
+      margin-top: 44px;
+      display: inline-block;
+      width: 480px;
+      .validateCodeInput {
+        vertical-align: top;
+        border: none;
+        border-radius: 4px;
+        width: 273px;
+        height: 88px;
+        margin-right: -13px;
+        background: transparent;
+
+        &::-webkit-input-placeholder { color:#c3c3c3; font-size: 30px; opacity: 1}
+        &::-moz-placeholder { color:#c3c3c3; font-size: 30px; opacity: 1} /* firefox 19+ */
+        &:-ms-input-placeholder { color:#c3c3c3; font-size: 30px; opacity: 1} /* ie */
+        &input:-moz-placeholder { color:#c3c3c3; font-size: 30px; opacity: 1}
+      }
+
+      .sendCode {
+        background: transparent;
+
+        vertical-align: top;
+        font-size: 30px;
+        border: none;
+        border-radius: 4px;
+        width: 213px;
+        height: 88px;
+        color: #c3c3c3;
+        &.active {
+          color: #48caf0;
+        }
+        .btn-content {
+          text-align: center;
+          display: inline-block;
+          width: 200px;
+        }
+      }
+    }
+  }
+}
+.btn-blue {
+  font-size: 36px;
+  line-height: 90px;
+  color: #ffffff;
+  display: inline-block;
+  width: 670px;
+  height: 90px;
+  background: #48CAF0;
+  background-size: contain;
+  border-radius: 5px;
+  &:active {
+    background: #41b5d8;
+  }
+}
+
+.agree {
+  font-size: 24px;
+  margin-top: 30px;
+  color: #c3c3c3;
+  .text-blue {
+    color: #48caf0
+  }
+}
+
+/* .roundedTwo */
+.roundedTwo {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  margin-right: 20px;
+  background: #48caf0;
+  border-radius: 50px;
+  display: inline-block;
+  label {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    border-radius: 50px;
+    &:after {
+      content: '';
+      width: 16px;
+      height: 8px;
+      position: absolute;
+      top: 10px;
+      left: 8px;
+      border: 5px solid white;
+      border-top: none;
+      border-right: none;
+      background: transparent;
+      opacity: 0;
+      transform: rotate(-45deg);
+    }
+    &:hover::after {
+      opacity: 0.3;
+    }
+  }
+  input[type=checkbox] {
+    visibility: hidden;
+    &:checked + label:after {
+      opacity: 1;
+    }
+  }
+}
+/* end .roundedTwo */
+input {
+  font-size: 30px;
+  padding-left: 27px
+}
+input:focus, button:focus {
+  outline: transparent none 0;
+}

@@ -1,0 +1,11 @@
+{
+  "framework": "jquery",
+  "px2rem": {
+    "remUnit": 75,
+    "remPrecision": 8
+  },
+  "html": {
+    "title": "会员权益",
+    "track": "SAMPLE_TRACK"
+  }
+}

@@ -1,0 +1,126 @@
+@import "../../../node_modules/normalize.css/normalize.css";
+@import "../../_commons/css/base.less";
+@import "../../_commons/css/parking_base.less";
+
+// Sample
+#root {
+  color : #333;
+}
+.loadBox{
+	height:100%;
+}
+.loading{
+	  text-align:center;
+	  padding:100px;
+	  font-size:40px;
+}
+
+
+
+
+
+
+
+
+    #wrapper {
+      position: absolute;
+      z-index: 1;
+      top: 0px;
+      bottom: 80px;
+      left: -9999px;
+      width: 100%;
+      /*background: #aaa;*/
+      overflow: auto;
+    }
+
+    #scroller {
+      position: absolute;
+      z-index: 1;
+      /*    -webkit-touch-callout:none;*/
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      width: 100%;
+      min-height:100%;
+      padding: 0;
+    }
+
+    #myFrame {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    /**
+     *
+     * Pull down styles
+     *
+     */
+    #pullDown, #pullUp {
+      background: #fff;
+      height: 80px;
+      line-height: 40px;
+      padding: 10px 20px;
+      border-bottom: 1px solid #ccc;
+      font-weight: bold;
+      font-size: 30px;
+      color: #888;
+    }
+
+    #pullDown .pullDownIcon, #pullUp .pullUpIcon {
+      display: block;
+      float: left;
+      width: 40px;
+      height: 40px;
+      -webkit-background-size: 40px 80px;
+      background-size: 40px 80px;
+      -webkit-transition-property: -webkit-transform;
+      -webkit-transition-duration: 250ms;
+    }
+
+    #pullDown .pullDownIcon {
+      -webkit-transform: rotate(0deg) translateZ(0);
+    }
+
+    #pullUp .pullUpIcon {
+      -webkit-transform: rotate(-180deg) translateZ(0);
+    }
+
+    #pullDown.flip .pullDownIcon {
+      -webkit-transform: rotate(-180deg) translateZ(0);
+    }
+
+    #pullUp.flip .pullUpIcon {
+      -webkit-transform: rotate(0deg) translateZ(0);
+    }
+
+    #pullDown.loading .pullDownIcon, #pullUp.loading .pullUpIcon {
+      background-position: 0 100%;
+      -webkit-transform: rotate(0deg) translateZ(0);
+      -webkit-transition-duration: 0ms;
+
+      -webkit-animation-name: loading;
+      -webkit-animation-duration: 2s;
+      -webkit-animation-iteration-count: infinite;
+      -webkit-animation-timing-function: linear;
+    }
+
+    @-webkit-keyframes loading {
+      from {
+        -webkit-transform: rotate(0deg) translateZ(0);
+      }
+      to {
+        -webkit-transform: rotate(360deg) translateZ(0);
+      }
+    }
+
+    #pullUp{
+       /* position: absolute;
+        bottom: 0;
+        width: 100%;*/
+    }
+
+
+
+    #loadBox{
+    	width:100%;
+    	height:100%;
+    }

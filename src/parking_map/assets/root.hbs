@@ -1,0 +1,38 @@
+<div id="wrapper">
+  <div id="scroller">
+    <div id="pullDown">
+      <span class="pullDownIcon"></span><span class="pullDownLabel">...</span>
+    </div>
+    <div id='loadBox'>
+      <div class='loading'>loading……</div>
+    </div>
+    <div id="pullUp" style='display:none;'>
+      <span class="pullUpIcon"></span><span class="pullUpLabel">加载更多...</span>
+    </div>
+  </div>
+</div>
+<div class="alertBox" id='firstLoginTip'>
+  <div class="alert">
+      <div class="content"></div>
+      <div class="operate">
+        <input class="btn one sm" id='firstLoginTipBtn' type="button" value="确认">
+      </div>
+  </div>
+</div>
+<div class='errBox' style='display:none;'>
+  <div class='g-autoBoxOut'>
+    <div class='g-autoBoxIn content'></div>
+  </div>
+</div>
+
+<div class="g-loading" style='display:none;'>
+  <span><i class='iconfont icon-load'></i>加载中</span>
+</div>
+
+<div class='notWork'>
+  <p><i class='iconfont icon-notwork'></i></p>
+  <p>网络请求失败，请检查您的网络设置。</p>
+  <div class="operation">
+    <input type='button' class='btn btnBlue' value='重新加载' id='reLoad'>
+  </div>
+</div>

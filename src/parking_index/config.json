@@ -1,0 +1,12 @@
+{
+  "framework": "jquery",
+  "px2rem": {
+    "remUnit": 75,
+    "remPrecision": 8
+  },
+  "html": {
+    "title": "页面加载中……",
+    "track": "SAMPLE_TRACK",
+    "template": "./tpl.hbs"
+  }
+}

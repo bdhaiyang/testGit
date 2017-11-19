@@ -1,0 +1,142 @@
+@import "../../../node_modules/normalize.css/normalize.css";
+@import "../../_commons/css/base.less";
+@import "../../_commons/css/parking_base.less";
+
+// Sample
+#root {
+  //color : #00aeff;
+}
+/*确认支付*/
+.cardNumber {
+    padding-top: 40px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+}
+.cardNumber h4{
+    background: #093bba;
+    display: inline-block;
+    padding:10px 0;
+    border-radius: 10px;
+    font-weight: normal;
+    border: 4px solid #093bba;
+}
+.cardNumber span {
+    padding: 20px 36px;
+    border-radius: 10px;
+    height:74px;
+    line-height:74px;
+    background: #093bba;
+    color: #fff;
+    border:4px solid #fff;
+}
+
+.payList {
+    padding: 40px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    font-size: 28px;
+    color: #8a8a8a;
+}
+
+.payList li {
+    border-bottom: 0px solid #dbdbdb;
+    padding: 0 34px;
+    overflow: hidden;
+    line-height: 66px;
+    position: relative;
+}
+.payList .fr{
+	color:#333;
+}
+.payList .red{
+	font-size:42px;
+	color:#f14c4c;
+}
+.payList .priceYellow {
+    color: #f14c4c;
+}
+/*缴费结果*/
+.payResult .payList {
+    border-bottom: 0;
+}
+
+.payResult .tip {
+    font-size:24px;
+}
+
+.pointWechat{
+    display:block;
+    height:200px;
+    margin-top:20px;
+    padding:42px 34px;
+    background:#fff;
+    position:relative;
+}
+.pointWechat p:first-child{
+    width:124px;
+    height:124px;
+    float:left;
+    margin-right:30px;
+    background:url("./images/logo.png") no-repeat;
+    background-size:100% 100%;
+    border-radius:50%;
+}
+.pointWechat p:last-child{
+    width:530px;
+}
+.pointWechat span{
+    display:block;
+    font-size:28px;
+    color:#666;
+    line-height:36px;
+}
+.pointWechat p:last-child span:first-child{
+    font-size:30px;
+    color:#333;
+    margin-bottom:20px;
+    line-height:40px;
+}
+.pointWechat p input{
+    position:absolute;
+    top:70px;
+    right:34px;
+    font-size:30px;
+    height:60px;
+    line-height:60px;
+    width:124px;
+}
+
+.wechat{
+    margin-top:20px;
+    padding:0px 34px;
+    background:#fff;
+    overflow:hidden;
+}
+.wechat p{
+    float:left;
+}
+.wechat p span{
+    display:block;
+    font-size:28px;
+    color:#666;
+    line-height:36px;
+}
+.wechat p span.tit{
+    font-size:36px;
+    color:#333;
+    border-bottom:2px solid rgba(0,0,0,0.2);
+    line-height:80px;
+    margin-bottom:34px;
+    margin-top: 40px;
+}
+.wechat p:first-child{
+    width:60%;
+}
+.wechat p:last-child{
+    width:40%;
+    text-align: center;
+    padding: 40px 17px;
+}
+.wechat p img{
+    width:220px;
+}

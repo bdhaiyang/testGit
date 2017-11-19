@@ -1,0 +1,102 @@
+@import "../../../node_modules/normalize.css/normalize.css";
+@import "../../_commons/css/base.less";
+@import "../../_commons/css/parking_base.less";
+
+// Sample
+#root {
+  color : #333;
+}
+/*停车记录*/
+.plateItem{
+    background: #fff;
+    margin-bottom: 20px;
+}
+.plateItem > ul > li {
+    padding: 28px 34px;
+    border-bottom: 1px solid #ddd;
+    line-height: 40px;
+    display: -webkit-box;
+    box-sizing: border-box;
+    font-size:32px;
+}
+
+.plateItem > ul > li:last-child {
+    border-bottom: 0;
+    padding: 32px 34px 12px;
+}
+
+.plateItem .status {
+    width: 60px;
+    text-align: right;
+    color: #ff5252;
+}
+
+.plateItem .pro ul {
+    -webkit-box-flex: 1;
+}
+
+.plateItem .pro img {
+    width: 110px;
+    height: 110px;
+}
+.plateItem .pro ul li {
+    padding: 5px 0;
+    margin-left: 40px;
+    font-size: 28px;
+}
+
+.plateItem .pro ul li:nth-child(2) {
+    
+    color: #666;
+    line-height: 70px;
+}
+
+.num{
+    font-size: 36px;
+    color:#48caf0;
+}
+.plateItem > ul > li.orderStatus{
+    line-height:55px;
+}
+
+.noData{
+  display:none;
+  padding-top:350px;
+  z-index:8;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
+.noData p{
+  text-align:center;
+  font-size:30px;
+  color:#adadad;
+  padding:12px 34px;
+}
+.noData p:last-child{
+    padding-top:46px;
+}
+.noData p img{
+  width:160px;
+}
+
+.orderStatus{
+  position:relative;
+}
+.orderStatus a{
+  position: absolute;
+  right: 24px;
+}
+.orderStatus a i.iconfont{
+  display: inline-block;
+  transform: rotate(-90deg);
+  font-size:28px;
+  margin-left:10px;
+}
+
+#wrapper{
+  bottom:0rem;
+}

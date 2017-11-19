@@ -1,0 +1,11 @@
+{
+  "framework": "jquery",
+  "px2rem": {
+    "remUnit": 75,
+    "remPrecision": 8
+  },
+  "html": {
+    "title": "第三方接入测试",
+    "track": "SAMPLE_TRACK"
+  }
+}

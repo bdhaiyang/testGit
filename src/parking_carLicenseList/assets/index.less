@@ -1,0 +1,128 @@
+@import "../../../node_modules/normalize.css/normalize.css";
+@import "../../_commons/css/base.less";
+@import "../../_commons/css/parking_base.less";
+
+// Sample
+#root {
+  //color : #00aeff;
+}
+body{
+    background:#fff;
+}
+/*车牌号管理*/
+.plateNumberList {
+    text-align: center;
+}
+
+.plateNumberList ul {
+    height: 550px;
+}
+
+.plateNumberList li {
+    position: relative;
+    padding: 60px 34px;
+    border-bottom:1px solid rgba(0,0,0,0.2);
+    color: #333;
+
+}
+
+.plateNumberList li p {
+    position: relative;
+    font-size: 40px;
+}
+.plateNumberList li p.content{
+    padding: 4px 0;
+    text-align:left;
+}
+.plateNumberList li p.content span:first-child{
+    display:block;
+    font-size:46px;
+}
+.plateNumberList li p.content span:last-child{
+    display:block;
+    margin-top:20px;
+    font-size:36px;
+    color:#adadad;
+}
+.plateNumberList li p.content span.red{
+    color:#e74444;
+}
+.plateNumberList .tip {
+    color: #666666;
+    font-size: 28px;
+}
+
+.rPos {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    margin-top: -30px;
+    padding:0 10px;
+}
+.del{
+
+}
+.goPayPageBtn{
+    position: absolute;
+    right: 34px;
+    top:50px;
+    padding: 0 10px;
+    margin-top: 25px;
+    margin-right:10px;
+    border: 0 solid #ccc;
+    font-size: 40px;
+    width:220px;
+}
+.delCarLicenseBtn{
+    position: absolute;
+    left: -24px;
+    top: -24px;
+    padding: 10px;
+    line-height: 60px;
+    color:#fd4040;
+
+}
+.delCarLicenseBtn .iconfont{
+    font-size:50px;
+}
+
+.plateNumberList input:disabled{
+    border: 0 solid #aaa;
+    background-color: rgba(0,0,0,0);
+    color: #cfe5fe;
+    font-size:30px;
+}
+
+.img{
+    width:120px;
+    height:120px;
+    float:left;
+    margin-right:40px;
+}
+
+
+.noData{
+  display:none;
+  padding-top:155px;
+  z-index:8;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
+.noData p{
+  text-align:center;
+  font-size:30px;
+  color:#adadad;
+  padding:12px 34px;
+}
+.noData p:last-child{
+    text-align:left;
+    line-height:44px;
+}
+.noData i.iconfont{
+  font-size:200px;
+  color:#cfcfcf;
+}

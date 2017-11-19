@@ -1,0 +1,329 @@
+<section class='bg'>
+  <form >
+    <!--<div class="cardNumber">
+      <span><input type='text' id='cardNumber' autocomplete="off"></span>
+      <input type='text' maxlength='7' id='cardNumber' autocomplete="off" placeholder='请输入车牌'>
+    </div>-->
+    <p class='tip'>请您添加车辆，体验在线支付。</p>
+    <div class="cardNumber">
+      <!--<div><p class="selectIpt">京<i class='iconfont icon-xiangxia'></i></p></div>-->
+      <ul>
+        <li>
+          <p class="selectIpt"><span>京</span><i class='iconfont icon-xiangxia'></i></p>
+        </li>
+        <li><p></p></li>
+        <li><p></p></li>
+        <li><p></p></li>
+        <li><p></p></li>
+        <li><p></p></li>
+        <li><p></p></li>
+      </ul>
+    </div>
+    <div class="operation">
+      <input class="btn btnBlue" type="button" id='bindBtn' value="添加车辆" disabled>
+    </div>
+  </form>
+</section>
+
+<footer class="g-footer" >
+  <nav class="g-nav">
+    <a href="{{wechatUrl}}">
+      <span class="icon"><i class="iconfont icon-car"></i></span>
+      <span class="icon-desc">停车缴费</span>
+    </a>
+    <a href="/fe/fe/sea-parking/html/parking_carList.html" class="active">
+      <span class="icon"><i class="iconfont icon-wangfuguanlichepai"></i></span>
+      <span class="icon-desc">车辆管理</span>
+    </a>
+    <a href="/fe/fe/sea-parking/html/parking_notes.html">
+      <span class="icon"><i class="iconfont icon-order"></i></span>
+      <span class="icon-desc">停车记录</span>
+    </a>
+    <a href="/fe/fe/sea-parking/html/parking_coupon.html">
+      <span class="icon"><i class="iconfont icon-ticket"></i></span>
+      <span class="icon-desc">停车券</span>
+    </a>
+    <a href="tel:4009506677">
+      <span class="icon"><i class="iconfont icon-phone"></i></span>
+      <span class="icon-desc">联系客服</span>
+    </a>
+  </nav>
+</footer>
+
+<div class="alertBox" id='firstLoginTip'>
+  <div class='alert'>
+      <div class="content">已实现与广场车辆信息共享</div>
+      <div class="operate">
+        <input class="btn one sm" id='firstLoginTipBtn' type="button" value="确认">
+      </div>
+  </div>
+</div>
+<div class="alertBox" id='errCarLicenseTip'>
+  <div class='alert'>
+      <div class="content">该车辆已被他人绑定。如需帮助，请联系客服。</div>
+      <div class="operate">
+        <a href='tel:4009506677' class='btn first sm' id='telBtn'>联系客服</a>
+        <a href='javascript:void(0)' class='btn second sm' id='closeBtn'>知道了</a>
+      </div>
+  </div>
+</div>
+
+<div class='errBox' style='display:none;'>
+  <div class='g-autoBoxOut'>
+    <div class='g-autoBoxIn content'></div>
+  </div>
+</div>
+
+<div class="g-loading" style='display:none;'>
+  <span><!--<i class='iconfont icon-load'></i>--><img src='http://timg.ffan.com/convert/resize/url_T1dgdTBTLQ1RCvBVdK/tfs/0f2b063593aa7a368fcf307d406204fa.png'>加载中</span>
+</div>
+<div class='notWork'>
+  <p><i class='iconfont icon-notwork'></i></p>
+  <p>网络请求失败，请检查您的网络设置。</p>
+  <div class="operation">
+    <input type='button' class='btn btnBlue' value='重新加载' id='reLoad'>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="numBox" style="display: none;">
+  <ul class="row">
+    <li class="col10">
+      <p>1</p>
+    </li>
+    <li class="col10">
+      <p>2</p>
+    </li>
+    <li class="col10">
+      <p>3</p>
+    </li>
+    <li class="col10">
+      <p>4</p>
+    </li>
+    <li class="col10">
+      <p>5</p>
+    </li>
+    <li class="col10">
+      <p>6</p>
+    </li>
+    <li class="col10">
+      <p>7</p>
+    </li>
+    <li class="col10">
+      <p>8</p>
+    </li>
+    <li class="col10">
+      <p>9</p>
+    </li>
+    <li class="col10">
+      <p>0</p>
+    </li>
+  </ul>
+  <ul class="row">
+    <li class="col10">
+      <p>港</p>
+    </li>
+    <li class="col10">
+      <p>Q</p>
+    </li>
+    <li class="col10">
+      <p>W</p>
+    </li>
+    <li class="col10">
+      <p>E</p>
+    </li>
+    <li class="col10">
+      <p>R</p>
+    </li>
+    <li class="col10">
+      <p>T</p>
+    </li>
+    <li class="col10">
+      <p>Y</p>
+    </li>
+    <li class="col10">
+      <p>U</p>
+    </li>
+    <li class="col10">
+      <p>P</p>
+    </li>
+    <li class="col10">
+      <p>澳</p>
+    </li>
+  </ul>
+  <ul class="row">
+    <li class="col10">
+      <p>A</p>
+    </li>
+    <li class="col10">
+      <p>S</p>
+    </li>
+    <li class="col10">
+      <p>D</p>
+    </li>
+    <li class="col10">
+      <p>F</p>
+    </li>
+    <li class="col10">
+      <p>G</p>
+    </li>
+    <li class="col10">
+      <p>H</p>
+    </li>
+    <li class="col10">
+      <p>J</p>
+    </li>
+    <li class="col10">
+      <p>K</p>
+    </li>
+    <li class="col10">
+      <p>L</p>
+    </li>
+  </ul>
+  <ul class="row">
+    <li class="col10">
+      <p>Z</p>
+    </li>
+    <li class="col10">
+      <p>X</p>
+    </li>
+    <li class="col10">
+      <p>C</p>
+    </li>
+    <li class="col10">
+      <p>V</p>
+    </li>
+    <li class="col10">
+      <p>B</p>
+    </li>
+    <li class="col10">
+      <p>N</p>
+    </li>
+    <li class="col10">
+      <p>M</p>
+    </li>
+  </ul>
+  <p class="del"><i class='iconfont icon-del2'></i></p>
+</div>
+<div class="provinceBox">
+  <ul class="row">
+    <li class="col10">
+      <p>京</p>
+    </li>
+    <li class="col10">
+      <p>津</p>
+    </li>
+    <li class="col10">
+      <p>冀</p>
+    </li>
+    <li class="col10">
+      <p>鲁</p>
+    </li>
+    <li class="col10">
+      <p>晋</p>
+    </li>
+    <li class="col10">
+      <p>蒙</p>
+    </li>
+    <li class="col10">
+      <p>辽</p>
+    </li>
+    <li class="col10">
+      <p>吉</p>
+    </li>
+    <li class="col10">
+      <p>黑</p>
+    </li>
+    <li class="col10">
+      <p>沪</p>
+    </li>
+  </ul>
+  <ul class="row">
+    <li class="col10">
+      <p>苏</p>
+    </li>
+    <li class="col10">
+      <p>浙</p>
+    </li>
+    <li class="col10">
+      <p>皖</p>
+    </li>
+    <li class="col10">
+      <p>闽</p>
+    </li>
+    <li class="col10">
+      <p>赣</p>
+    </li>
+    <li class="col10">
+      <p>豫</p>
+    </li>
+    <li class="col10">
+      <p>鄂</p>
+    </li>
+    <li class="col10">
+      <p>湘</p>
+    </li>
+    <li class="col10">
+      <p>粤</p>
+    </li>
+    <li class="col10">
+      <p>桂</p>
+    </li>
+  </ul>
+  <ul class="row">
+    <li class="col10">
+      <p>渝</p>
+    </li>
+    <li class="col10">
+      <p>川</p>
+    </li>
+    <li class="col10">
+      <p>贵</p>
+    </li>
+    <li class="col10">
+      <p>云</p>
+    </li>
+    <li class="col10">
+      <p>藏</p>
+    </li>
+    <li class="col10">
+      <p>陕</p>
+    </li>
+    <li class="col10">
+      <p>甘</p>
+    </li>
+    <li class="col10">
+      <p>青</p>
+    </li>
+  </ul>
+  <ul class="row">
+    <li class="col10">
+      <p>琼</p>
+    </li>
+    <li class="col10">
+      <p>新</p>
+    </li>
+    <li class="col10">
+      <p>港</p>
+    </li>
+    <li class="col10">
+      <p>澳</p>
+    </li>
+    <li class="col10">
+      <p>台</p>
+    </li>
+    <li class="col10">
+      <p>宁</p>
+    </li>
+  </ul>
+</div>

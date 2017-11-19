@@ -1,0 +1,47 @@
+<section class='bg'>
+  <form class="login">
+    <ul>
+      <li>
+        <input type='tel' id='telphone' maxlength='11' placeholder='请输入手机号码' required data-rule-isMobile="true"  data-msg-required="*手机号不能为空">        
+        <p id="telErr"></p>
+        <p id='sendSuccessTip'></p>
+      </li>
+      <li>
+        <input type='number' id='msgCodes' class='' placeholder='请输入验证码' autocomplete="off">
+        <input type='button' id='sendBtn' class='btn btnBorder' value='获取验证码' disabled>
+      </li>
+      <li>
+        <input type='button' class='btn btnBlue' value='登录' id='loginBtn' disabled>
+        <p id="errLoginTip"></p>
+        <label class='selectAgreement' for='isLooked'><i class='iconfont icon-select'></i><input type='checkbox' id='isLooked' checked>我已阅读并同意<a href='/fe/fe/sea-parking/html/parking_agreement.html'>《飞凡会员服务协议》</a></label>
+      </li>
+    </ul>
+  </form>
+
+</section>
+<div class="alertBox" id='firstLoginTip'>
+  <div class="alert">
+      <div class="content">已实现与ETCP车辆信息共享。</div>
+      <div class="operate">
+        <input class="btn one sm" id='firstLoginTipBtn' type="button" value="确认">
+      </div>
+  </div>
+</div>
+
+<div class='errBox' style='display:none;'>
+  <div class='g-autoBoxOut'>
+    <div class='g-autoBoxIn content'></div>
+  </div>
+</div>
+
+<div class="g-loading" style='display:none;'>
+  <span><!--<i class='iconfont icon-load'></i>--><img src='http://timg.ffan.com/convert/resize/url_T1dgdTBTLQ1RCvBVdK/tfs/0f2b063593aa7a368fcf307d406204fa.png'>加载中</span>
+</div>
+
+<div class='notWork'>
+  <p><i class='iconfont icon-notwork'></i></p>
+  <p>网络请求失败，请检查您的网络设置。</p>
+  <div class="operation">
+    <input type='button' class='btn btnBlue' value='重新加载' id='reLoad'>
+  </div>
+</div>

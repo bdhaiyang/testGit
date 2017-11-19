@@ -1,0 +1,117 @@
+<div id="wrapper">
+  <div id="scroller">
+    <div id="pullDown">
+      <span class="pullDownIcon"></span><span class="pullDownLabel">...</span>
+    </div>
+    <section>
+      <div class="bg" id='calPayResult'>
+        <div class="cardNumber"><h4><span id='carLicense'></span></h4></div>
+        <ul class="payList">
+          <li>
+            <span>车辆位置</span>
+            <span class="fr" id='plazaName'></span>
+          </li>
+          <li>
+            <span>入场时间</span>
+            <span class="fr" id='inTime'></span>
+          </li>
+          <li class='parkingTime'>
+            <span>停车时长</span>
+            <span class="fr" id='parkingTime'></span>
+          </li>
+          <li class='overParkingTime'>
+            <span>超时时长</span>
+            <span class="fr" id='overParkingTime'></span>
+          </li>
+          <li>
+            <span>费用</span>
+            <span class="fr priceYellow" id='shouldPay'></span>
+          </li>
+        </ul>
+        <ul class="payList discount">
+          <li id='discountActivityLi'>
+            <span id='promotionName'>停车五折优惠</span>
+            <span class="fr priceYellow" id='discountActivity'></span>
+          </li>
+          <li id='discountCouponLi'>
+            <span><i class="iconfont icon-ticket red"></i>停车券</span>
+            <span class="fr priceYellow" id='discountCoupon'></span>
+          </li>
+        </ul>
+        <ul class="payList">
+          <li>
+            <p class="fr gray">需支付：<span class="red" id='money'></span></p>
+          </li>
+        </ul>
+      </div>
+      <div class="operation">
+        <input type='button' class='btn btnBlue' value='付停车费' id='payBtn'>
+      </div>
+    </section>
+    <div id="pullUp" style='display:none;'>
+      <span class="pullUpIcon"></span><span class="pullUpLabel">加载更多...</span>
+    </div>
+  </div>
+</div>
+
+
+<footer class="g-footer" >
+  <nav class="g-nav">
+    <a href="{{wechatUrl}}" class="active">
+      <span class="icon"><i class="iconfont icon-car"></i></span>
+      <span class="icon-desc">停车缴费</span>
+    </a>
+    <a href="/fe/fe/sea-parking/html/parking_carList.html">
+      <span class="icon"><i class="iconfont icon-wangfuguanlichepai"></i></span>
+      <span class="icon-desc">车辆管理</span>
+    </a>
+    <a href="/fe/fe/sea-parking/html/parking_notes.html">
+      <span class="icon"><i class="iconfont icon-order"></i></span>
+      <span class="icon-desc">停车记录</span>
+    </a>
+    <a href="/fe/fe/sea-parking/html/parking_coupon.html">
+      <span class="icon"><i class="iconfont icon-ticket"></i></span>
+      <span class="icon-desc">停车券</span>
+    </a>
+    <a href="tel:4009506677">
+      <span class="icon"><i class="iconfont icon-phone"></i></span>
+      <span class="icon-desc">联系客服</span>
+    </a>
+  </nav>
+</footer>
+
+<div class='alertBox' id='errOrderTip'>
+  <div class="alert">
+      <div class="content">该车牌已被他人绑定。如需帮助，请联系客服。</div>
+      <div class="operate">
+        <input class="btn one sm" type="button" id='knowBtn' value="知道了">
+      </div>
+  </div>
+</div>
+<div class="alertBox" id='firstLoginTip'>
+  <div class='alert'>
+      <div class="content">已实现与ETCP车辆信息共享。</div>
+      <div class="operate">
+        <input class="btn one sm" id='firstLoginTipBtn' type="button" value="确认">
+      </div>
+  </div>
+</div>
+
+<div class='errBox' style='display:none;'>
+  <div class='g-autoBoxOut'>
+    <div class='g-autoBoxIn content'></div>
+  </div>
+</div>
+
+<div class="g-loading" style='display:none;'>
+  <span><!--<i class='iconfont icon-load'></i>--><img src='http://timg.ffan.com/convert/resize/url_T1dgdTBTLQ1RCvBVdK/tfs/0f2b063593aa7a368fcf307d406204fa.png'>加载中</span>
+</div>
+
+
+<div class='notWork'>
+  <p><i class='iconfont icon-notwork'></i></p>
+  <p>网络请求失败，请检查您的网络设置。</p>
+  <div class="operation">
+    <input type='button' class='btn btnBlue' value='重新加载' id='reLoad'>
+  </div>
+</div>

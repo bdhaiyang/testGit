@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+    <title>附近停车场</title>
+    <script src="https://nres.ffan.com/newactivity/static/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="http://cache.amap.com/lbs/static/main1119.css"/>
+    <script type="text/javascript" src="http://webapi.amap.com/maps?v=1.3&key=de727091773166ebc0d2941077385be2&plugin=AMap.Driving"></script>
+    <script src="http://webapi.amap.com/ui/1.0/main.js"></script>
+</head>
+<body>
+<div id="wrapper">
+  <div id="scroller">
+    <div id="pullDown">
+      <span class="pullDownIcon"></span><span class="pullDownLabel">...</span>
+    </div>
+    <div id='nearbyList'>
+    </div>    
+    <div id="pullUp">
+      <span class="pullUpIcon"></span><span class="pullUpLabel">加载更多...</span>
+    </div>
+  </div>
+</div>
+<div class='notWork'>
+  <p><i class='iconfont icon-notwork'></i></p>
+  <p>网络请求失败，请检查您的网络设置。</p>
+  <div class="operation">
+    <input type='button' class='btn btnBlue' value='重新加载' id='reLoad'>
+  </div>
+</div>
+<div class="g-loading" style='display:none;'>
+  <span><img src='http://timg.ffan.com/convert/resize/url_T1dgdTBTLQ1RCvBVdK/tfs/0f2b063593aa7a368fcf307d406204fa.png'>加载中</span>
+</div>
+</body>
+</html>

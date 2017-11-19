@@ -1,0 +1,63 @@
+<div id="wrapper">
+  <div id="scroller">
+    <div id="pullDown">
+      <span class="pullDownIcon"></span><span class="pullDownLabel">...</span>
+    </div>
+    <section>
+      <ul class="couponList">
+        
+      </ul>
+    </section>
+    <div id="pullUp" style='display:none;'>
+      <span class="pullUpIcon"></span><span class="pullUpLabel">加载更多...</span>
+    </div>
+  </div>
+</div>
+
+<footer class="g-footer" >
+  <nav class="g-nav">
+    <a href="{{wechatUrl}}">
+      <span class="icon"><i class="iconfont icon-car"></i></span>
+      <span class="icon-desc">停车缴费</span>
+    </a>
+    <a href="/fe/fe/sea-parking/html/parking_carList.html">
+      <span class="icon"><i class="iconfont icon-wangfuguanlichepai"></i></span>
+      <span class="icon-desc">车辆管理</span>
+    </a>
+    <a href="/fe/fe/sea-parking/html/parking_notes.html">
+      <span class="icon"><i class="iconfont icon-order"></i></span>
+      <span class="icon-desc">停车记录</span>
+    </a>
+    <a href="/fe/fe/sea-parking/html/parking_coupon.html" class="active">
+      <span class="icon"><i class="iconfont icon-ticket"></i></span>
+      <span class="icon-desc">停车券</span>
+    </a>
+    <a href="tel:4009506677">
+      <span class="icon"><i class="iconfont icon-phone"></i></span>
+      <span class="icon-desc">联系客服</span>
+    </a>
+  </nav>
+</footer>
+
+
+<div class='errBox' style='display:none;'>
+  <div class='g-autoBoxOut'>
+    <div class='g-autoBoxIn content'></div>
+  </div>
+</div>
+
+<div class="g-loading" style='display:none;'>
+  <span><!--<i class='iconfont icon-load'></i>--><img src='http://timg.ffan.com/convert/resize/url_T1dgdTBTLQ1RCvBVdK/tfs/0f2b063593aa7a368fcf307d406204fa.png'>加载中</span>
+</div>
+<div class='notWork'>
+  <p><i class='iconfont icon-notwork'></i></p>
+  <p>网络请求失败，请检查您的网络设置。</p>
+  <div class="operation">
+    <input type='button' class='btn btnBlue' value='重新加载' id='reLoad'>
+  </div>
+</div>
+
+<div class='noData'>
+  <p></p>
+  <p>您没有可用的优惠券。</p>
+</div>

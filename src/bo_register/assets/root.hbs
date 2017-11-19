@@ -1,0 +1,49 @@
+<header class="registerHeader">
+	<p class="title">注册</p>
+	<i class="icon-return"></i>
+</header>
+<div class="registerContainer" id="registerContainer">
+	<form>
+		<div class="validate">
+			<div class="textInput">
+				<i class="iconfont icon-phone"></i>
+				<input type="tel" class="required" id="phone" maxlength="11" placeholder="请输入手机号" />
+				<span class="clearTxt hide">x</span>
+			</div>
+		</div>
+		<div class="agreement">
+			<input type="checkbox" id="agreement" checked="" class="required"><span><i class="checkbox"></i><i class="checkedbox"></i></span>我已阅读并同意<a href="">《蓝海会员服务协议》</a>
+		</div>
+		<a href="javascript:void(0);" class="nextBtn defaultColor" disabled>下一步</a>
+	</form>
+</div>
+<div class="registerSecond hide" id="registerSecond">
+	<p class="sendTxt">免费验证短信已发送至手机号<span class="telephone"></span></p>
+	<form>
+		<div class="textInput">
+			<i class="iconfont icon-say"></i>
+			<input type="text" id="codeNum" class="required" maxlength="6" placeholder="请输入验证码" />
+			<input class="btnSendCode" type="button" value="获取短信验证码" onclick="sendMessage()" />
+			<span class="codeClearTxt hide">x</span>
+		</div>
+		<div class="textInput">
+			<i class="iconfont icon-password"></i>
+			<input type="password" id="password" class="required" placeholder="请设置登录密码" />
+			<i class="pass-open iconfont icon-eyes"></i>
+			<span class="passClearTxt hide">x</span>
+		</div>
+		<p class="reminder">8-16位字母、数字或特殊符号组合，区分大小写</p>
+		<div class="validate"></div>
+		<a href="javascript:void(0);" class="submitBtn">注册</a>
+	</form>
+</div>
+<div class="popUpShow">
+	<div class="bg"></div>
+	<div class="popUp">
+		<p class="message">该手机号已经注册，是否直接登录？</p>
+		<div class="messageBtn">
+			<a class="delBtn" href="javascript:void(0);">取消</a>
+			<a class="affirmBtn" href="">登录</a>
+		</div>
+	</div>
+</div>

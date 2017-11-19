@@ -1,0 +1,46 @@
+<ul class="member-list">
+	{{#each this}}
+	<li class="items">
+		<div class="titleInfo">
+			<p class="title"><i class="icon-diamond"></i><span>{{title}}</span></p>
+			<div class="border"></div>
+		</div>
+		<div class="equity">
+			<div class="equityInfo">
+				<div class="shadow">
+					<p class="time"><i class="icon-time"></i><span>有效期：{{content.validTime}}</span></p>
+					<div class="read-more">
+						<i class="iconfont icon-more"><img src="./images/icon_bottomarrow.png"></i>
+						<div class="moreTxt">
+							<ul class="table-list">
+								<li>
+									<p class="text">
+										<i class="icon-person"></i>
+										<span>适用人群：{{content.applyTo}}</span>
+									</p>
+								</li>
+								<li>
+									<p class="text">
+										<i class="icon-info"></i>
+										<span>权益介绍：{{content.introduction}}</span>
+									</p>
+								</li>
+								<li>
+									<p class="text">
+										<i class="icon-detail"></i>
+										<span>详细规则：{{content.rules}}</span>
+									</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</li>
+	{{/each}}
+</ul>
+<div class="noInfo">
+	<img src="./images/no_equityInfo.jpg" />
+	<p>抱歉，暂无任何权益信息哦～</p>
+</div>

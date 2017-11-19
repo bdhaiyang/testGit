@@ -1,0 +1,12 @@
+{
+  "framework": "jquery",
+  "px2rem": {
+    "remUnit": 75,
+    "remPrecision": 8
+  },
+  "html": {
+    "title": "附近停车场列表",
+    "track": "SAMPLE_TRACK",
+    "template": "./tpl.html"
+  }
+}

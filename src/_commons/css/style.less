@@ -1,0 +1,447 @@
+/* reset */
+
+body, html {
+    height: 100%;
+    background: #f0f0f0;
+}
+
+html, body, div, span, applet, object, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn,
+em, img, ins, kbd, q, samp, small, strike, strong, sub, sup, tt, b, u, i, dl, dt, dd, ol, ul, li, fieldset, legend, form, label, article,
+aside, canvas, details, embed, figure, figcaption, footer, header, menu, nav, output, ruby, section, summary, time,
+mark, audio, video {
+    margin: 0;
+    tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -ms-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+article, aside, details, figcaption, figure, footer, header, menu, nav, section {
+    display: block;
+    clear: both;
+}
+
+body {
+    min-width: 320px;
+    font: 28px/1.5 Microsoft Yahei, sans-serif;
+    color: #333;
+    /*background: #fff;*/
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+form {
+    display: inline
+}
+
+ul, ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+img {
+    width: 100%;
+    vertical-align: middle;
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+}
+
+li > a {
+    display: block;
+}
+
+a {
+    color: #039be5;
+    outline: none;
+    /*text-decoration: none;*/
+}
+
+a.active {
+    color: #039be5;
+}
+
+em, i, address {
+    font-style: normal;
+}
+
+button, input, select, textarea {
+    font-size: 100%;
+    vertical-align: middle;
+    outline: none;
+}
+
+textarea {
+    resize: none;
+}
+
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+    cursor: pointer;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+}
+
+input:focus:-moz-placeholder, input:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.ellipsis {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.break {
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+.clx:after {
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+    content: "";
+}
+
+.clx {
+    *zoom: 1;
+}
+
+.red {
+    color: #ce0000;
+}
+
+input[type="text"], input[type="tel"] {
+    height: 64px;
+    line-height: 64px;
+    padding: 0 10px;
+    border: 1px solid #888;
+    border-radius: 10px;
+}
+
+.btn {
+    width: 100%;
+    height: 64px;
+    line-height: 64px;
+    border: 1px solid #039be5;
+    border-radius: 10px;
+}
+
+.btn.btnBorder {
+    width: auto;
+    border: 1px solid #039be5;
+    border-radius: 10px;
+    color: #039be5;
+    background: #fff;
+}
+
+.btnBorderGray {
+    width: auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    color: #666;
+    background: #fff;
+}
+
+.btnBlue {
+    border: 1px solid #039be5;
+    border-radius: 10px;
+    color: #fff;
+    background: #29b6f6;
+}
+
+.btnRed {
+    border: 1px solid #ce0000;
+    border-radius: 10px;
+    color: #fff;
+    background: #ce0000;
+}
+
+.btnGray {
+    border: 1px solid #333;
+    border-radius: 10px;
+    color: #fff;
+    background: #666;
+}
+
+.btnWhite {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    color: #333;
+    background: #fff;
+}
+
+.sm {
+    height: 64px;
+    line-height: 64px;
+    font-size: 24px;
+}
+
+input:disabled {
+    border: 1px solid #aaa;
+    background-color: #ccc;
+    color: #888;
+}
+
+.bg {
+    /*border-bottom: 1px solid #ccc;*/
+    background: #fff;
+}
+
+.fullBg {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+}
+
+form > ul > li {
+    margin: 40px;
+}
+
+form input[type='text'], form input[type='tel'] {
+    width: 60%;
+}
+
+/*login*/
+.login ul {
+    overflow: hidden;
+}
+#telErr,#errLoginTip{
+	color:red;
+	position: absolute;
+}
+#sendSuccessTip{
+    color:green;
+    position:absolute;
+}
+
+/*弹框*/
+.alert {
+    display: none;
+    width: 70%;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    margin-left: -35%;
+    border: 1px solid #ccc;
+    background: #fff;
+
+}
+
+.alert .content {
+    padding: 40px;
+    line-height: 40px;
+}
+
+.alert .operate {
+    text-align: center;
+}
+
+.alert .operate input[type='button'] {
+    margin: 10px;
+    display: inline;
+    width: 70px;
+}
+
+/*确认支付*/
+.cardNumber {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.cardNumber span {
+    padding: 5px 20px;
+    border-radius: 5px;
+    background: darkblue;
+    color: #fff;
+}
+
+.payList {
+    border-bottom: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.payList li {
+    border-bottom: 0px solid #dbdbdb;
+    padding: 0 10px;
+    overflow: hidden;
+    line-height: 40px;
+    position: relative;
+}
+
+/*.payList label{position:absolute;right:0;top:2px;width:52px;}
+.payList input[type="checkbox"]{position: absolute;left: -10000px;visibility: hidden;}*/
+.payList .priceYellow {
+    color: #ff7814;
+}
+
+.operation {
+    padding: 20px;
+}
+
+/*车牌号管理*/
+.plateNumberList {
+    text-align: center;
+}
+
+.plateNumberList ul {
+    height: 230px;
+}
+
+.plateNumberList li {
+    padding: 20px 15px 0 15px;
+    box-shadow: 1px -3px 3px #cecece inset;
+    color: #fff;
+
+}
+
+.plateNumberList li p {
+    height: 100px;
+    line-height: 100px;
+    border-radius: 10px 10px 0 0;
+    background: #29b6f6;
+    position: relative;
+    font-size: 32px;
+}
+
+.plateNumberList .tip {
+    color: #666666;
+    font-size: 24px;
+}
+
+.rPos {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -15px;
+}
+
+/*缴费结果*/
+.payResult .payList {
+    border-bottom: 0;
+}
+
+.payResult .tip {
+    padding: 20px 10px;
+}
+
+/*绑定车牌*/
+input[type='text'].province {
+    width: 80px;
+}
+
+/*停车记录*/
+.plateItem{
+    background: #fff;
+    margin-bottom: 10px;
+}
+.plateItem > ul > li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    line-height: 20px;
+    display: -webkit-box;
+    box-sizing: border-box;
+}
+
+.plateItem > ul > li:last-child {
+    border-bottom: 0;
+}
+
+.plateItem .status {
+    width: 60px;
+    text-align: right;
+    color: #ff5252;
+}
+
+.plateItem .pro ul {
+    -webkit-box-flex: 1;
+}
+
+.plateItem .pro > span {
+    float: left;
+}
+
+.plateItem .pro img {
+    width: 60px;
+    height: 60px;
+}
+
+.plateItem .pro ul {
+    float: left;
+}
+
+.plateItem .pro ul li {
+    padding: 5px 0;
+    margin-left: 10px;
+
+}
+
+.plateItem .pro ul li:nth-child(2) {
+    font-size: 12px;
+    color: #666;
+}
+
+.plateItem .pro ul li:nth-child(2) .red {
+    font-size: 14px;
+}
+
+
+footer{
+    width:600px;
+    height:200px;
+    display:-moz-box;
+    display:-webkit-box;
+    display:box;
+    -moz-box-orient:vertical;
+    -webkit-box-orient:vertical;
+    box-orient:vertical;//垂直排列
+}
+footer>a{
+    background:orange;
+    -moz-box-flex:1;
+    -webkit-box-flex:1;
+    box-flex:1;
+}

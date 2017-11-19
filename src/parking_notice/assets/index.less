@@ -1,0 +1,27 @@
+@import "../../../node_modules/normalize.css/normalize.css";
+@import "../../_commons/css/base.less";
+
+// Sample
+#root {
+  font-size:28px;
+  color : #999;
+}
+.container{
+	padding:0 30px;
+	.items{
+		padding:50px 0;
+		border-bottom:1px solid #e7e7e7; /*!no*/
+		dt{
+			padding-bottom:30px;
+			font-size:40px;
+			color:#2692fb;
+		}
+		dd{
+			line-height:1.6;
+			padding-bottom:20px;
+			&:last-child{
+				padding-bottom:0;
+			}
+		}
+	}
+}

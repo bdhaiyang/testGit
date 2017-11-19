@@ -1,0 +1,95 @@
+@import "../../../node_modules/normalize.css/normalize.css";
+@import "../../_commons/css/base.less";
+@import "../../_commons/css/parking_base.less";
+
+// Sample
+#root {
+  color : #333;
+}
+body {
+    background: #fff;
+}
+
+/*login*/
+.login ul {
+    overflow: hidden;
+    padding-top:46px;
+}
+.login ul li{
+    position: relative;
+    margin-bottom: 40px;
+}
+.login ul li:last-child{
+    margin-top:100px;
+}
+#telErr,#errLoginTip{
+	color:red;
+	position: absolute;
+    line-height: 40px;
+    font-size: 28px;
+}
+#sendSuccessTip{
+    color:green;
+    position:absolute;
+    line-height: 40px;
+    font-size: 28px;
+}
+#telphone{
+    //margin-right:10px;
+    padding-right: 36%;
+}
+#sendBtn{
+    width:36%;
+    position: absolute;
+    top: 0;
+    right: 1px;
+    border-radius:0 5px 5px 0;
+    border-top:0;
+    border-bottom:0;
+    border-right:0;
+    border-color:#ccc;
+    border-left-width: 2px;
+    height:66px;
+    line-height:66px;
+    margin:11px 0;   
+    font-size:30px; 
+    background:none;
+}
+#sendBtn:disabled.time{
+    color:#48caf0;
+}
+.btnBorder{
+    color:#48caf0;
+}
+form input[type='text'], form input[type='number'], form input[type='tel']{
+    width:100%;
+    font-size:30px;
+}
+#loginBtn:disabled{
+    background:#a6ebff;
+    border-color:#a6ebff;
+    color:#fff;
+}
+
+
+.selectAgreement{
+    display:block;
+    padding-top:10px;
+    text-align:center;
+    color:#adadad;
+    font-size:24px;
+}
+.selectAgreement i{
+    margin-right:20px;
+    color:#48caf0;
+    font-size:40px;
+    vertical-align: sub;
+}
+.selectAgreement i.icon-noselect{
+    color:#d7d7d7;
+}
+#isLooked{
+    position: absolute;
+    left: -10000rem;
+    visibility: hidden;
+}
